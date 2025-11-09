@@ -29,5 +29,3 @@ y_pred_lr=lr_model.predict(X_test)
 print("Logistic Regression")
 print("ACCURACY:",accuracy_score(y_test,y_pred)
 print("Classification:",classification_report(y_test,y_pred)
-
-
