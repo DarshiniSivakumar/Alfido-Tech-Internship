@@ -8,10 +8,10 @@ zip_path = r"C:\Users\Darshini\Downloads\archive (4).zip"
 extract_to = r"C:\Users\Darshini\Downloads\iris_data"
 with zipfile.ZipFile(zip_path, 'r') as zip_ref:
     zip_ref.extractall(extract_to)
-print("✅ Files extracted to:", extract_to)
-csv_path = extract_to + r"\iris.csv"  # change if filename differs
+print("Files extracted to:", extract_to)
+csv_path = extract_to + r"\IRIS.csv"  
 df = pd.read_csv(csv_path)
-print("✅ Dataset loaded successfully!\n")
+print("Dataset loaded successfully!\n")
 print(df.head())
 df=pd.read_csv("Iris.csv")
 X=df.drop("species",axis=1)
@@ -29,4 +29,5 @@ y_pred_lr=lr_model.predict(X_test)
 print("Logistic Regression")
 print("ACCURACY:",accuracy_score(y_test,y_pred)
 print("Classification:",classification_report(y_test,y_pred)
+
 
